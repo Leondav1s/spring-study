@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--
+    使用spring创建对象
+
+    id是变量名
+    class是new的对象
+    property 相当于给对象中的属性一个值
+    -->
+
+<!--<bean id="user" class="com.davis.pojo.User">-->
+<!--    <property name="name" value="davis"/>-->
+<!--</bean>-->
+
+
+<!--&lt;!&ndash; 第一种    通过下标&ndash;&gt;-->
+<!--    <bean id="user" class="com.davis.pojo.User">-->
+<!--        <constructor-arg index="0" value="davis"/>-->
+<!--    </bean>-->
+<!--&lt;!&ndash; 第二种   通过类型创建，不建议&ndash;&gt;-->
+<!--    <bean id="user" class="com.davis.pojo.User">-->
+<!--        <constructor-arg type="java.lang.String" value="davis"/>-->
+<!--    </bean>-->
+<!-- 第三种   直接通过参数名-->
+    <bean id="user" class="com.davis.pojo.User" name="us1,us2,us3">
+        <constructor-arg name="name" value="davis"/>
+    </bean>
+
+    <alias name="user" alias="whoisuser"/>
+
+<!--    id：唯一的标识符，相当于对象名-->
+<!--    class：bean对象所对应的全限定名，包名+类型-->
+<!--    name:也是别名-->
+
+
+</beans>

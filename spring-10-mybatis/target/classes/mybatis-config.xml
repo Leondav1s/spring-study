@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--核心配置文件-->
+<configuration>
+    <typeAliases>
+        <package name="com.davis.pojo"/>
+    </typeAliases>
+<!--    也可以指定一个包名，MyBatis 会在包名下面搜索需要的 Java Bean，比如：-->
+<!--    扫描实体类的包，它的默认别名就为这个类的 类名，首字母小写！-->
+
+</configuration>
